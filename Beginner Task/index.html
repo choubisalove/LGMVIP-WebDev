@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <script src="./js1.js "></script>
+
+    <!-----CSS Main File----->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!--first section starts-->
+
+    <div id="first" class="first_section">
+        <div class="slides">
+            <!-----radio buttons start----->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-----radio buttons end----->
+
+            <!-----Options Starts----->
+            <div class="options">
+                <a href="#first">Home</a>
+                <a href="#third">Projects</a>
+                <a href="#four">Pricing</a>
+                <a href="#second">Blogs</a>
+                <a href="#five">Team</a>
+                <a href="#six">Contact</a>
+            </div>
+            <!-----Options Starts----->
+
+            <!-----title of the page starts----->
+            <div class="title_1">
+                <h2>Travel page</h2>
+            </div>
+            <!-----title of the page end----->
+
+            <!-----slider images start----->
+            <div class="slide first">
+                <img src="./Images/img4.jpg" alt="image1" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./Images/img5.cms" alt="image2" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./Images/img3.webp" alt="image3" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./Images/img7.jpg" alt="image4" width="100%" height="600">
+            </div>
+            <!-----slider images end----->
+
+            <!-----Content starts----->
+            <div class="description">
+                <h1>“Take only memories, leave only footprints”</h1>
+            </div>
+            <!-----Content end----->
+
+            <!-----First Buttons starts----->
+            <div class="buttons">
+                <button class="button">Learn More</button>
+            </div>
+            <!-----First Buttons starts----->
+
+            <!-----automatic navigation start----->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-----automatic navigation end----->
+        </div>
+
+        <!-----manual navigation start----->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-----manual navigation end----->
+
+    </div>
+
+    <script type="text/javascript">
+        var count = 1
+        setInterval(function() {
+            document.getElementById('radio' + count).checked = true;
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+        }, 4000);
+    </script>
+
+    <!--#####$$$$$ first section ends $$$$$#####-->
+    <!-- Main Section -->
+    <main>
+        <!-- Home section -->
+        <section id="home">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-md-8 col-12 mx-auto mt-3">
+                        <h1 class="text-center heading my-3">Welcome to Travel page</h1>
+                        <div class="row mt-5 mx-auto d-flex justify-content-between align-items-center first_row pt-5">
+                            <div class="col-md-8 col-12 d-flex justify-content-center">
+                                <p>
+                                  Royal, Regal, Revered – Rajasthan. A magical universe of colour coded kingdoms. A place where little red turbans and green saris dance to classical music. A place where medieval forts stand tall and proud, amidst flamboyant palaces and jeweled crowns. A place where camels, colour and culture are embodied as one. A mystical desert that has seen many wars, heard many secrets and narrated many stories.</p>
+
+                            </div>
+                            <div class="col-md-2 col-12 icon_umbrella">
+                                <i class="fas fa-umbrella"></i>
+                            </div>
+                        </div>
+                        <div class="row mt-5 d-flex justify-content-between align-items-center second_row mx-auto text-center">
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-receipt"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+                    </div>
+                </div>
+        </section>
+        <!--Project Section -->
+        <section id="project">
+            <div class="container-fluid">
+                <div class="row pb-5">
+                    <div class="col-md-12 col-12">
+                        <h1 class="heading">Travel Diaries Of Our Guests </h1>
+                        <div class="row mt-5">
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./Images/img8.jfif" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./Images/img9.jfif" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./Images/img10.jfif" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./Images/img11.jfif" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important; width: 1100px;">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="container py-5 mb-3">
+                <div class="row">
+                    <div class="col-md-12 col-10 mx-auto">
+                        <h1 class="heading">Pricing Table</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>STANDARD Travel</h5>
+                                <p>5999/-</p>
+                                <ul>
+                                    <li>Udaipur-Chittor-Kubhalgarh</li>
+                                    <li>2 nights 3 days</li>
+                                    <li>Best Service</li>
+                                  
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>Wildlife Travel</h5>
+                                <p>7999/-</p>
+                                <ul>
+                                    <li>Delhi-Jaipur-Ranthambore</li>
+                                    <li>4 Nights 5 Days</li>
+                                    <li>Best Hotels</li>
+                                   
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>PREMIUM Travel</h5>
+                                <p>21999/-</p>
+                                <ul>
+                                    <li>Jaipur-Jodhpur-Udaipur</li>
+                                    <li>5 Nights 6 Days</li>
+                                    <li>3 Star/5 Star Hotels </li>
+                                   
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+
+            </div>
+        </section>
+
+
+
+        <!-- Travel page Team Section -->
+        <section id="team">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-8 col-11 mx-auto">
+                        <h1 class="heading">Travel page Team</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/ME.jpg" alt="Member1" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Love Choubisa</h5>
+                                <p> Leader</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/luv.jpg" alt="Member2" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Luv Hirani</h5>
+                                <p>Manager</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/nalin.jpg" alt="Member3" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Nalin Jain</h5>
+                                <p>Director</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/punit.jpg" alt="Member4" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Punit Balsora</h5>
+                                <p>Chairman</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/priyanshu.jpg" alt="Member5" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Priyanshu Saini</h5>
+                                <p>HOD</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./Images/nitin.jpg" alt="Member6" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>Nitin Tayal</h5>
+                                <p>HR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+
+            </div>
+        </section>
+
+
+
+        <!-- Newsletter -->
+        <section id="newsletter">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-12 col-12 mx-auto">
+                        <h1 class="heading1" style="color: #fff;">Newsletter Signup</h1>
+                        <div class="input_signup">
+                            <input type="text" placeholder="abc@example.com"><button>Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="videos">
+            <div class="iframe-container">
+               <h1 class="heading">Video</h1>
+           
+            <iframe width="450px" height="315px" src="https://www.youtube.com/embed/ZE8vn5CjagI" title="YouTube video player" frameborder="20px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         
+              
+            
+            </div>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-8 col-11 mx-auto">
+                        <h1 class="heading">Blog</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./Images/img14.jpg" alt="Member1" class="img-fluid image">
+                                <h5> <b>Lesson</b></h5>
+                                <p>17 January, 2021</p>
+                                <p style="color: #000;">Want to spend a royal vacation in the ‘Land of Maharajas’? These Rajasthan travel blogs will give you a sneak peek in the colorful world of the royal state. Get your hands on information like the most recommended places to visit, best time to visit, and exquisite shopping destinations in these Rajasthan blogs.
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./Images/img13.webp" alt="Member2" class="img-fluid image">
+                                <h5><b>Lesson</b></h5>
+                                <p>19 November, 2019</p>
+                                <p style="color: #000;">The best (and therefore most popular) time to visit Rajasthan is during winter, between October – March, with the busiest months being December, January and (sometimes) February. During this time the weather in Rajasthan is pleasant – you’ll be warm under the daytime sun, but it does get cold at night!
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./Images/img12.jpg" alt="Member3" class="img-fluid image">
+                                <h5> <b>Lesson</b></h5>
+                                <p>24 December, 2018</p>
+                                <p style="color: #000;">Zillions of superlatives put together won’t exactly define the beauty called Rajasthan. Located in northwestern part of India, Rajasthan is a geographically diverse region that can fascinate you every moment. See colour runs riot in the land of the Kings, battle-scarred forts, places of grandeur steeped in spirituality and history.
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-12 col-12 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mx-auto">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2063433.3306987246!2d73.2109281300833!3d26.692679086351987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396a3efaf7e30e37%3A0xb52b9b4506c088e5!2sRajasthan!5e0!3m2!1sen!2sin!4v1626704193674!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                                            width="750" height="605" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mx-auto contact_form p-3">
+                                <h1 class="heading">Contact</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="email" placeholder="joe" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" placeholder="abc@gmail.com" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" placeholder="XYZ" class="form-control" id="subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" cols="15" rows="6"></textarea>
+                                        <button class="submit">Submit</button>
+                                    </div>
+                                    <!-- <button class="submit">Submit</button> -->
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer" style="background: #dfe6e9;">
+            <div class="container-footer py-5">
+                <div class="row">
+                    <div class="col-md-10 col-11 mx-auto">
+                        <div class="row text-center">
+                            <div class="col-md-4 col-11">
+                                <h5>Worksite</h5>
+                                <ul>
+                                    <li>www.travelrajasthan.com</li>
+                                    <li>Travelling in rajasthan</li>
+                                    <li>Meera mar group of hotels</li>
+                                </ul>
+                            </div>
+                            <div class=" follow-icons col-md-4 col-11">
+                                <h5>Follow US</h5>
+                                <ul>
+                                    <li><i class="fab fa-facebook"> </i></li>
+                                    <li><i class="fab fa-instagram"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-11">
+                                <h5>Contact US</h5>
+                                <ul>
+                                    <li>+91-1234567890</li>
+
+                                    <li>travel.rajasthan@skype</li>
+                                    <li>travel.rajasthan@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+</body>
+
+</html>
